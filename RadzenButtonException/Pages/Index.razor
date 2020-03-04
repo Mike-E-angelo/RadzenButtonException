@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<RadzenButton Click="OnClick" Text="No Message" /> | <ButtonComponent Click="OnClick" Text="Pretty message" />
+
+@code
+{
+    Task OnClick(MouseEventArgs parameter)
+    {
+        throw new InvalidOperationException("Error");
+    }
+}
